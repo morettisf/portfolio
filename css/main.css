@@ -52,8 +52,14 @@ h3 {
 }
 
 h4 {
-  font-size: 1.2em;
+  font-size: 1em;
   color: cornflowerblue;
+  font-weight: 500;
+}
+
+h5 {
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
 #me-img-wrap-mobile {
@@ -126,13 +132,13 @@ h4 {
 .work-wrap h3 {
   font-weight: 600;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .work-wrap ul {
   list-style: none;
   padding-left: 0;
-  font-size: 0.9em;
+  font-size: 0.8em;
   margin-top: 5px;
 }
 
@@ -303,6 +309,11 @@ h4 {
 
   .work-wrap h3 {
     margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  h5 {
+    margin-bottom: 15px;
   }
 
 }
@@ -354,6 +365,10 @@ h4 {
     padding: 20px 20px 0 20px;
   }
 
+  h5 {
+    font-size: 1em;
+  }
+
 }
 
 @media (min-width: 500px) {
@@ -373,7 +388,8 @@ h4 {
 
   .work-wrap h3 {
     font-size: 2.2em;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
+    margin-top: 25px;
 
 }
 
@@ -450,6 +466,16 @@ h4 {
 
   #contact {
     padding-left: 20%;
+  }
+
+  h5 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+  }
+
+  .work-wrap ul {
+    font-size: 1em;
+    line-height: 1.5em;
   }
 
 }
