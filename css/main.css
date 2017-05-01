@@ -60,6 +60,7 @@ h4 {
 h5 {
   margin-top: 2px;
   margin-bottom: 2px;
+  font-weight: 500;
 }
 
 #me-img-wrap-mobile {
@@ -115,14 +116,26 @@ h5 {
 
 .work-wrap {
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.7);
   overflow: hidden;
   text-align: center;
   color: white;
-  font-weight: 300;
   transition-property: background-color;
   transition-duration: 0.3s;
   transition-timing-function: ease;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.non-mobile-desc {
+  display: none;
+}
+
+.work-wrap p {
+  font-size: 0.8em;
+  font-weight: 100;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .work-wrap:hover {
@@ -131,7 +144,7 @@ h5 {
 
 .work-wrap h3 {
   font-weight: 600;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 5px;
 }
 
@@ -283,6 +296,8 @@ h4 {
   padding-right: 20px;
 }
 
+
+
 @media (min-width: 414px) {
 
   #name {
@@ -307,21 +322,22 @@ h4 {
     height: 575px;
   }
 
-  .work-wrap h3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-
   h5 {
-    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 0;
   }
 
-  .work-wrap ul {
-    font-size: 0.8em;
-    line-height: 1.5em;
+  .non-mobile-desc {
+    display: block;
+  }
+
+  .mobile-desc {
+    display: none;
   }
 
 }
+
+
 
 @media (min-width: 500px) {
 
@@ -352,10 +368,6 @@ h4 {
     line-height: 1.25em;
   }
 
-  .work-wrap h3 {
-    margin-top: 30px;
-  }
-
   h3 {
     font-size: 1.8em;
   }
@@ -371,32 +383,19 @@ h4 {
   }
 
   h5 {
-    font-size: 1em;
-  }
-
-}
-
-@media (min-width: 500px) {
-
-  #me-img-wrap-mobile {
-    padding: 18px;
-  }
-
-  #me-img {
-    width: 140px;
-    height: 140px;
-  }
-
-  #work {
-    height: 700px;
+    font-size: 0.8em;
+    margin-top: 20px;
   }
 
   .work-wrap h3 {
     font-size: 2.2em;
-    margin-bottom: 25px;
-    margin-top: 25px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
 
 }
+
+
 
 @media (min-width: 768px) {
 
@@ -474,16 +473,12 @@ h4 {
   }
 
   h5 {
-    font-size: 1.3em;
-    margin-bottom: 15px;
-  }
-
-  .work-wrap ul {
-    font-size: 1em;
-    line-height: 1.5em;
+    font-size: 0.9em;
   }
 
 }
+
+
 
 @media (min-width: 1200px) {
 
