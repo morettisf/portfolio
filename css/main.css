@@ -64,7 +64,7 @@ h1 {
   opacity: 1 !important;
 }
 
-#arrow {
+#arrow-top {
   width: 100%;
   opacity: 0;
   text-align: center;
@@ -299,7 +299,7 @@ h5 {
 
 @media (min-width: 375px) {
 
-  #arrow {
+  #arrow-top {
     margin-bottom: 25px;
   }
 
