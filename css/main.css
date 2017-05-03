@@ -21,15 +21,15 @@ html, body {
 }
 
 #name {
-  margin-top: 210px;
   text-align: center;
   font-family: 'Comfortaa', cursive;
-  padding: 15px;
+  position: absolute;
+  width: 100%;
 }
 
 h1 {
   font-size: 2.5em;
-  margin-top: 0;
+  margin-top: 10px;
   margin-bottom: 10px;
   color: cornflowerblue;
   opacity: 0;
@@ -40,7 +40,7 @@ h1 {
 }
 
 .h1-motion {
-  margin-top: 5vh !important;
+  margin-top: 15px !important;
   opacity: 1 !important;
 }
 
@@ -54,6 +54,7 @@ h1 {
   transition-duration: 1s;
   transition-timing-function: ease;
   transition-delay: initial;
+  width: 70%;
   max-width: 400px;
   margin-left: auto;
   margin-right: auto;
@@ -122,12 +123,12 @@ h5 {
   border-radius: 50%;
   overflow: hidden;
   margin-top: -200px;
-  width: 200px;
-  height: 200px;
-  margin-left: -100px;
+  width: 150px;
+  height: 150px;
+  margin-left: -75px;
   background-image: url('../images/me.jpg');
   background-size: cover;
-  position: absolute;
+  position: relative;
   left: 50%;
   animation-duration: 1.5s;
   animation-name: flip;
@@ -321,9 +322,9 @@ h5 {
 @media (min-width: 414px) {
 
   #me-img {
-    width: 250px;
-    height: 250px;
-    margin-left: -125px;
+    width: 200px;
+    height: 200px;
+    margin-left: -100px;
   }
 
   @keyframes flip {
@@ -340,7 +341,7 @@ h5 {
 
   h1 {
     font-size: 3em;
-    margin-top: 10vh;
+    margin-top: 15px;
     margin-bottom: 20px;
   }
 
@@ -353,7 +354,7 @@ h5 {
   }
 
   .h1-motion {
-    margin-top: 12vh !important;
+    margin-top: 20px !important;
   }
 
   .fa-chevron-down, .fa-chevron-up {
