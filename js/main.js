@@ -1,7 +1,7 @@
-let h1 = document.querySelector('h1');
-let h2 = document.querySelector('h2');
-let arrow = document.querySelector('#arrow');
-let contactWrap = document.querySelector('#contact-wrap');
+var h1 = document.querySelector('h1');
+var h2 = document.querySelector('h2');
+var arrow = document.querySelector('#arrow-top');
+var contactWrap = document.querySelector('#contact-wrap');
 
 // intro animation up front
 setTimeout(() => {
@@ -22,7 +22,7 @@ setTimeout(() => {
 
 
 // letter rotation on mouse over
-let letters = document.querySelectorAll('.letter');
+var letters = document.querySelectorAll('.letter');
 
 letters.forEach((letter) => {
   letter.addEventListener('mouseenter', (event) => {
