@@ -308,12 +308,16 @@ h5 {
     font-size: 2em;
   }
 
-  #name h2 {
-    margin-top: 25px;
-  }
+  @keyframes flip {
+    from {
+      margin-top: -200px;
+      transform: rotateX(0deg);
+    }
 
-  .h2-motion {
-    margin-top: 20px !important;
+    to {
+      margin-top: 5vh;
+      transform: rotateX(360deg);
+    }
   }
 
 }
@@ -354,6 +358,14 @@ h5 {
   }
 
   .h1-motion {
+    margin-top: 20px !important;
+  }
+
+  #name h2 {
+    margin-top: 25px;
+  }
+
+  .h2-motion {
     margin-top: 20px !important;
   }
 
@@ -398,6 +410,11 @@ h5 {
   .fa-code, .fa-link {
     padding-left: 12px;
     padding-right: 12px;
+  }
+
+  .contact-icon-wrap i {
+    font-size: 3em;
+    color: white;
   }
 
 }
