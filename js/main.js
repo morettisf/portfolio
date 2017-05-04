@@ -1,7 +1,7 @@
 var h1 = document.querySelector('h1');
 var h2 = document.querySelector('h2');
 var arrow = document.querySelector('#arrow-top');
-var contactWrap = document.querySelector('#contact-wrap');
+var contactWrapTop = document.querySelector('#contact-wrap-top');
 
 // intro animation up front
 setTimeout(function() {
@@ -12,7 +12,7 @@ setTimeout(function() {
 
         setTimeout(function() {
           arrow.classList.add('blink');
-          contactWrap.classList.add('contact-wrap-fade-in');
+          contactWrapTop.classList.add('contact-wrap-fade-in');
 
         }, 500)
 
@@ -34,4 +34,15 @@ letters.forEach(function(letter) {
   })
 })
 
+
+var myScrollFunc = function() {
+  var y = window.scrollY;
+  if (y >= 100) {
+    contactWrapTop.classList.add('hide-contact');
+  } else {
+    contactWrapTop.classList.remove('hide-contact');
+  }
+};
+
+window.addEventListener('scroll', myScrollFunc);
 
