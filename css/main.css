@@ -20,6 +20,10 @@ html, body {
   overflow: hidden;
 }
 
+.pipe {
+  color: black;
+}
+
 #name {
   text-align: center;
   font-family: 'Comfortaa', cursive;
@@ -113,11 +117,39 @@ h4 {
   margin-top: 0;
 }
 
-h5 {
+.desc ul {
+  padding: 0;
+  font-size: 0.8em;
+}
+
+.desc li {
+  color: cornflowerblue;
+  list-style: none;
+  display: inline;
+  margin-right: 10px;
+  word-wrap: break-word;
+}
+
+.desc li:after { 
+  content: '|';
+  color: #000;
+  margin-left: 10px;
+}
+
+.desc li:last-child {
+  margin-right: 0;
+}
+
+.desc li:last-child:after {
+  content: '';
+  margin-left: 0;
+}
+
+/*h5 {
   margin-top: 2px;
   margin-bottom: 2px;
   color: cornflowerblue;
-}
+}*/
 
 #me-img {
   border-radius: 50%;
@@ -295,7 +327,7 @@ h5 {
 #bottom {
   width: 100%;
   background-color: cornflowerblue;
-  height: 40px;
+  height: 20px;
 }
 
 @media (min-width: 375px) {
