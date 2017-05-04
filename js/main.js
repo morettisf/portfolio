@@ -37,7 +37,7 @@ letters.forEach(function(letter) {
 
 var myScrollFunc = function() {
   var y = window.scrollY;
-  if (y >= 100) {
+  if (y >= 75) {
     contactWrapTop.classList.add('hide-contact');
   } else {
     contactWrapTop.classList.remove('hide-contact');

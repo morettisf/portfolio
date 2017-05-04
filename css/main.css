@@ -26,7 +26,7 @@ html, body {
 
 #name {
   text-align: center;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Comfortaa', sans-serif;
   position: absolute;
   width: 100%;
 }
