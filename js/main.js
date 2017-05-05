@@ -12,7 +12,7 @@ setTimeout(function() {
 
         setTimeout(function() {
           arrow.classList.add('blink');
-          contactWrapTop.classList.add('contact-wrap-fade-in');
+          contactWrapTop.classList.add('fade-in');
 
         }, 500)
 
@@ -37,11 +37,27 @@ letters.forEach(function(letter) {
 
 var myScrollFunc = function() {
   var y = window.scrollY;
+
   if (y >= 75) {
-    contactWrapTop.classList.add('hide-contact');
-  } else {
-    contactWrapTop.classList.remove('hide-contact');
+    contactWrapTop.classList.add('fade-out');
+  } 
+
+  if (y <= 75) {
+    contactWrapTop.classList.remove('fade-out');
   }
+
+  var workPos = document.querySelector('#contact').offsetTop;
+  console.log(workPos)
+  console.log(y)
+
+  if (y >= workPos) {
+    document.querySelector('nav').classList.add('nav-display');
+  }
+
+  if (y <= workPos) {
+    document.querySelector('nav').classList.remove('nav-display');
+  }
+
 };
 
 window.addEventListener('scroll', myScrollFunc);
