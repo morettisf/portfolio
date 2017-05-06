@@ -391,13 +391,13 @@ h4 {
   width: 50%;
   margin: 30px auto;
   max-width: 320px;
+  padding: 10px;
+  background-color: white;
+  border: 3px solid lightgrey;
 }
 
 #me-img-wrap img {
   width: 100%;
-  padding: 10px;
-  background-color: white;
-  border: 3px solid lightgrey;
 }
 
 @media (min-width: 375px) {
