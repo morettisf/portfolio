@@ -154,7 +154,6 @@ h1 {
 
 h3 {
   font-size: 1.5em;
-/*  margin-top: 0;*/
 }
 
 h4 {
@@ -255,6 +254,10 @@ h4 {
   padding: 20px;
   border: 3px solid lightgrey;
   background-color: white;
+}
+
+.project h3 {
+  margin-top: 0;
 }
 
 .project-img-wrap {
@@ -386,7 +389,8 @@ h4 {
 
 #me-img-wrap {
   width: 50%;
-  margin: 20px auto;
+  margin: 30px auto;
+  max-width: 320px;
 }
 
 #me-img-wrap img {
