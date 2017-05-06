@@ -46,16 +46,36 @@ var myScrollFunc = function() {
     contactWrapTop.classList.remove('fade-out');
   }
 
-  var workPos = document.querySelector('#contact').offsetTop;
-  console.log(workPos)
-  console.log(y)
+  var showNavPos = document.querySelector('#contact').offsetTop;
+  var projectPos = document.querySelector('#work').offsetTop;
+  var skillPos = document.querySelector('#info').offsetTop;
+  var aboutPos = document.querySelector('#about').offsetTop;
 
-  if (y >= workPos) {
+  if (y >= showNavPos) {
     document.querySelector('nav').classList.add('nav-display');
   }
 
-  if (y <= workPos) {
+  if (y <= showNavPos) {
     document.querySelector('nav').classList.remove('nav-display');
+    document.querySelector('#nav1').classList.remove('nav-active');
+  }
+
+  if (y >= (projectPos - 50)) {
+    document.querySelector('#nav1').classList.add('nav-active');
+    document.querySelector('#nav2').classList.remove('nav-active');
+    document.querySelector('#nav3').classList.remove('nav-active');
+  }
+
+  if (y >= (skillPos - 50)) {
+    document.querySelector('#nav1').classList.remove('nav-active');
+    document.querySelector('#nav2').classList.add('nav-active');
+    document.querySelector('#nav3').classList.remove('nav-active');
+  }
+
+  if (y >= (aboutPos - 50)) {
+    document.querySelector('#nav1').classList.remove('nav-active');
+    document.querySelector('#nav2').classList.remove('nav-active');
+    document.querySelector('#nav3').classList.add('nav-active');
   }
 
 };
