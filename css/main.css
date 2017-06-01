@@ -398,6 +398,7 @@ h4 {
 
 #me-img-wrap img {
   width: 100%;
+  display: block;
 }
 
 @media (min-width: 375px) {
