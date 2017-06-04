@@ -4,34 +4,39 @@ var arrow = document.querySelector('#arrow-top');
 var contactWrapTop = document.querySelector('#contact-wrap-top');
 
 // intro animation up front
-setTimeout(function() {
-  h1.classList.add('h1-motion');
+document.addEventListener('DOMContentLoaded', function() {
 
-    setTimeout(function() {
-      h2.classList.add('h2-motion');
+  setTimeout(function() {
+    h1.classList.add('h1-motion');
 
-        setTimeout(function() {
-          arrow.classList.add('blink');
-          contactWrapTop.classList.add('fade-in');
+      setTimeout(function() {
+        h2.classList.add('h2-motion');
 
-        }, 500)
+          setTimeout(function() {
+            arrow.classList.add('blink');
+            contactWrapTop.classList.add('fade-in');
 
-    }, 300)
+          }, 500)
 
-}, 1500)
+      }, 300)
+
+  }, 1500)
 
 
-// letter rotation on mouse over
-var letters = document.querySelectorAll('.letter');
+  // letter rotation on mouse over
+  var letters = document.querySelectorAll('.letter');
 
-letters.forEach(function(letter) {
-  letter.addEventListener('mouseenter', function(event) {
-    letter.classList.add('flip-letter');
+  letters.forEach(function(letter) {
+    letter.addEventListener('mouseenter', function(event) {
+      letter.classList.add('flip-letter');
 
-    setTimeout(function() {
-      letter.classList.remove('flip-letter');
-    }, 600)
+      setTimeout(function() {
+        letter.classList.remove('flip-letter');
+      }, 600)
+    })
   })
+
+
 })
 
 
