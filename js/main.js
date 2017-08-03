@@ -36,17 +36,6 @@ document.addEventListener('DOMContentLoaded', function() {
     })
   }
 
-  // letters.forEach(function(letter) {
-  //   letter.addEventListener('mouseenter', function(event) {
-  //     letter.classList.add('flip-letter');
-
-  //     setTimeout(function() {
-  //       letter.classList.remove('flip-letter');
-  //     }, 600)
-  //   })
-  // })
-
-
 })
 
 
