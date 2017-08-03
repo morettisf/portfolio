@@ -28,13 +28,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
   for (var i = 0; i < letters.length; i++) {
     letters[i].addEventListener('mouseenter', function(event) {
-      letters[i].classList.add('flip-letter');
+      event.target.classList.add('flip-letter');
 
       setTimeout(function() {
-        letters[i].classList.remove('flip-letter');
+        event.target.classList.remove('flip-letter');
       }, 600)
     })
   }
+
+  // letters.forEach(function(letter) {
+  //   letter.addEventListener('mouseenter', function(event) {
+  //     letter.classList.add('flip-letter');
+
+  //     setTimeout(function() {
+  //       letter.classList.remove('flip-letter');
+  //     }, 600)
+  //   })
+  // })
+
 
 })
 
