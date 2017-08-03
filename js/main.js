@@ -26,16 +26,15 @@ document.addEventListener('DOMContentLoaded', function() {
   // letter rotation on mouse over
   var letters = document.querySelectorAll('.letter');
 
-  letters.forEach(function(letter) {
-    letter.addEventListener('mouseenter', function(event) {
-      letter.classList.add('flip-letter');
+  for (var i = 0; i < letters.length; i++) {
+    letters[i].addEventListener('mouseenter', function(event) {
+      letters[i].classList.add('flip-letter');
 
       setTimeout(function() {
-        letter.classList.remove('flip-letter');
+        letters[i].classList.remove('flip-letter');
       }, 600)
     })
-  })
-
+  }
 
 })
 
