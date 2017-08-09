@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 var myScrollFunc = function() {
-  var y = window.scrollY;
+  var y = window.pageYOffset;
 
   if (y >= 75) {
     contactWrapTop.classList.add('fade-out');
